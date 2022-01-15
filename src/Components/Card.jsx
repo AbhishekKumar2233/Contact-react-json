@@ -1,5 +1,6 @@
 import React from "react";
 import Avatar from "./Avatar";
+import Details from "./Details";
 import "./styles.css";
 
 export default function Card(props) {
@@ -7,8 +8,8 @@ export default function Card(props) {
     <div className="card">
       <h2>{props.name}</h2>
       <Avatar img={props.img} />
-      <p>{props.contact}</p>
-      <p>{props.email}</p>
+      <Details detail={props.contact} />
+      <Details detail={props.email} />
     </div>
   );
 }
