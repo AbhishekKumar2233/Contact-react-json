@@ -1,0 +1,15 @@
+* {
+  font-family: "Aldrich";
+}
+.App {
+  text-align: center;
+}
+.card {
+  margin-top: 50px;
+  text-align: left;
+  align-items: center;
+  border-bottom: 2px solid grey;
+}
+.card h2 {
+  color: rgb(7, 168, 114);
+}
