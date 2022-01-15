@@ -6,6 +6,7 @@ import "./styles.css";
 export default function Card(props) {
   return (
     <div className="card">
+      <h3>{props.id}</h3>
       <h2>{props.name}</h2>
       <Avatar img={props.img} />
       <Details detail={props.contact} />

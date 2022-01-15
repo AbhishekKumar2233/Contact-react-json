@@ -2,11 +2,26 @@ import "./styles.css";
 import Card from "./Components/Card";
 import contacts from "./contacts";
 
+function createCard(contact) {
+  return (
+    <Card
+      key={contact.id}
+      id={contact.id + 1}
+      name={contact.name}
+      img={contact.img}
+      contact={contact.contact}
+      email={contact.email}
+    />
+  );
+}
+
 export default function App() {
   return (
     <div className="App">
       <h1>Contact Info</h1>
-      <Card
+      {/* mapfunction */}
+      {contacts.map(createCard)}
+      {/* <Card
         name={contacts[0].name}
         img={contacts[0].img}
         contact={contacts[0].contact}
@@ -41,7 +56,7 @@ export default function App() {
         img={contacts[5].img}
         contact={contacts[5].contact}
         email={contacts[5].email}
-      />
+      /> */}
     </div>
   );
 }
