@@ -4,6 +4,13 @@
 .App {
   text-align: center;
 }
+.App h1 {
+  text-decoration: underline;
+}
 .card {
   text-align: center;
+}
+.card img {
+  border-radius: 50%;
+  border: 3px solid black;
 }
